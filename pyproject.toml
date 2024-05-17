@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ds2000-docs"
+version = "0.1.0"
+description = "Documentation of Northeastern DS2000 course"
+authors = ["Scott Carvalho <scottcarvalho71@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+mkdocs-material = "^9.5.23"
+mkdocs-pyscript = "^0.2.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
