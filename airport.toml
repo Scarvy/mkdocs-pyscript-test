@@ -1,0 +1,4 @@
+packages = ["pandas"]
+
+[files]
+'https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv' = "airport-codes.csv"

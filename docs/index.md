@@ -1,9 +1,8 @@
-# `mkdocs-pyscript` demo site
+# Test MkDocs-PyScript
 
-This page demos how PyScript can be used to make online documentation interactive. It is one of the demos created for the conference talk 'Making Your Documentation Interactive with PyScript' by Jeff Glass. See [more details on that talk](https://github.com/JeffersGlass/using-pyscript-in-documentation) or [the code for this site](https://github.com/JeffersGlass/mkdocs-pyscript-demo) on GitHub.
+This is an interactive documentation!
 
-
-## The Datetime Module
+## Modules
 
 The `datetime` module can be used to reference specific times, timespans, epochs, and calendar days.
 Let's explore the relationship between the `datetime` and `timedelta` classes. If we create a new datetime:
@@ -32,4 +31,17 @@ from datetime import datetime
 d_3 = datetime(2023, 12, 14, 16, 30)
 d_4 = datetime(2024, 5, 13, 11, 15)
 print(d_3 - d_4)
+```
+
+```{.py setup env="first"}
+x = 1
+```
+
+```{.py env="first"}
+print(x)
+```
+
+```{.py env="airport" config="./airport.toml"}
+import pandas
+print(pandas.__version__)
 ```
